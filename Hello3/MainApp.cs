@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace RectArea
+{
+    class MainApp
+    {
+        public static void Main()
+        {
+            Console.WriteLine("사각형의 너비를 입력하세요.");
+            string width = Console.ReadLine();
+
+            Console.WriteLine("사각형의 높이를 입력하세요.");
+            string height = Console.ReadLine();
+
+            double w = double.Parse(width);
+            double h = double.Parse(height);
+
+            double area = w * h;
+
+            Console.WriteLine($"사각형의 넓이는: {area}입니다.");
+        }
+    }
+}
